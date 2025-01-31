@@ -1,4 +1,4 @@
 # scalr-terragrunt-simple
 The simple module for terragrunt testing
 
-2
+3
