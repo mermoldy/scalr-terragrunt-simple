@@ -2,6 +2,47 @@ variable "region" {
 
 }
 
+
+terraform {
+
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = ">= 5.60.0, <= 5.89.0"
+    }
+    null = {
+      source  = "hashicorp/null"
+      version = "3.2.3"
+    }
+    google = {
+      source  = "hashicorp/google"
+      version = "6.22.0"
+    }
+    datadog = {
+      source  = "DataDog/datadog"
+      version = ">= 3.1.2"
+    }
+    azurerm = {
+      source = "hashicorp/azurerm"
+    }
+    kubernetes = {
+      source = "hashicorp/kubernetes"
+    }
+    consul = {
+      source = "hashicorp/consul"
+    }
+    random = {
+      source = "hashicorp/random"
+    }
+    helm = {
+      source = "hashicorp/helm"
+    }
+    nomad = {
+      source = "hashicorp/nomad"
+    }
+  }
+}
+
 variable "test" {}
 
 provider "aws" {
